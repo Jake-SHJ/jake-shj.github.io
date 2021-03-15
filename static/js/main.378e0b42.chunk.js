@@ -1,2 +1,0 @@
-(this["webpackJsonpjake-shj.github.io"]=this["webpackJsonpjake-shj.github.io"]||[]).push([[0],{127:function(t,e,n){"use strict";n.r(e);var i=n(0),c=n.n(i),r=n(5),s=n.n(r),a=(n(96),n(97),n(98),n(131)),j=n(10),o=function(){return Object(j.jsx)("div",{className:"App",children:Object(j.jsx)(a.a,{type:"button",intent:"primary",children:"Start!"})})};s.a.render(Object(j.jsx)(c.a.StrictMode,{children:Object(j.jsx)(o,{})}),document.getElementById("root"))}},[[127,1,2]]]);
-//# sourceMappingURL=main.378e0b42.chunk.js.map
