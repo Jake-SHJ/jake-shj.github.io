@@ -1,2 +1,0 @@
-(this["webpackJsonpjake-shj.github.io"]=this["webpackJsonpjake-shj.github.io"]||[]).push([[0],{9:function(t,e,n){"use strict";n.r(e);var s=n(1),c=n.n(s),i=n(3),r=n.n(i),a=n(0);var j=function(){return Object(a.jsx)("div",{className:"App",children:"Start!"})};r.a.render(Object(a.jsx)(c.a.StrictMode,{children:Object(a.jsx)(j,{})}),document.getElementById("root"))}},[[9,1,2]]]);
-//# sourceMappingURL=main.f36569fd.chunk.js.map
