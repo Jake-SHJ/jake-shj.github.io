@@ -1,11 +1,9 @@
-import { Button } from "@blueprintjs/core";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <div className="App">
-      <Button type="button" intent="primary">
-        Start!
-      </Button>
+      <Navbar />
     </div>
   );
 };
