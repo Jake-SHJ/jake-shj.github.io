@@ -1,9 +1,10 @@
-import Navbar from "./components/Navbar";
+import "antd/dist/antd.css";
+import { Button } from "antd";
 
 const App = () => {
   return (
     <div className="App">
-      <Navbar />
+      <Button type="primary">test</Button>
     </div>
   );
 };
