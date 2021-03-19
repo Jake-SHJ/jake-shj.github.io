@@ -1,6 +1,7 @@
 import "antd/dist/antd.css";
 import styled from "styled-components";
-import { Layout, Menu, Card } from "antd";
+import { Layout, Menu, Card, Avatar } from "antd";
+import { UserOutlined, LaptopOutlined, MailOutlined } from "@ant-design/icons";
 const { Header, Sider, Content } = Layout;
 
 const StyledLayout = styled(Layout)`
@@ -12,6 +13,7 @@ const StyledSider = styled(Sider)`
   height: 90vh;
   left: 0;
   border-radius: 10px 0 0 10px;
+  padding: 18px 12px;
 `;
 
 const StyledHeader = styled(Header)`
@@ -24,10 +26,11 @@ const StyledContent = styled(Content)`
 `;
 
 const StyledItem = styled(Menu.Item)`
-  && {
+  &&& {
     height: 30px;
     line-height: 30px;
     border-radius: 8px;
+    padding-left: 8px !important;
   }
 `;
 
@@ -37,16 +40,48 @@ const App = () => {
       <Card style={{ border: 0 }}>
         <StyledLayout>
           <StyledSider>
+            <Avatar
+              size={12}
+              style={{
+                backgroundColor: "rgb(252, 69, 69)",
+                marginLeft: "8px",
+              }}
+            />
+            <Avatar
+              size={12}
+              style={{
+                backgroundColor: "rgb(252, 175, 36)",
+                marginLeft: "8px",
+              }}
+            />
+            <Avatar
+              size={12}
+              style={{
+                backgroundColor: "rgb(40, 193, 49)",
+                marginLeft: "8px",
+              }}
+            />
             <Menu
               theme="dark"
               mode="inline"
               defaultSelectedKeys={["1"]}
-              style={{ padding: "0 12px" }}
+              defaultOpenKeys={["sub"]}
             >
               <div style={{ height: "30px" }}></div>
-              <StyledItem key="1">nav 1</StyledItem>
-              <StyledItem key="2">nav 2</StyledItem>
-              <StyledItem key="3">nav 3</StyledItem>
+              <Menu.SubMenu key="sub" title="Jake's Portfolio">
+                <StyledItem key="1">
+                  <UserOutlined style={{ marginRight: "8px" }} />
+                  Intro
+                </StyledItem>
+                <StyledItem key="2">
+                  <LaptopOutlined style={{ marginRight: "8px" }} />
+                  Project
+                </StyledItem>
+                <StyledItem key="3">
+                  <MailOutlined style={{ marginRight: "8px" }} />
+                  Contact
+                </StyledItem>
+              </Menu.SubMenu>
             </Menu>
           </StyledSider>
           <Layout>
