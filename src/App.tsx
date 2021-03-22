@@ -1,38 +1,13 @@
 import "antd/dist/antd.css";
-import styled from "styled-components";
 import { Layout, Menu, Card, Avatar } from "antd";
 import { UserOutlined, LaptopOutlined, MailOutlined } from "@ant-design/icons";
-const { Header, Sider, Content } = Layout;
-
-const StyledLayout = styled(Layout)`
-  background-color: #fff;
-`;
-
-const StyledSider = styled(Sider)`
-  overflow: auto;
-  height: 90vh;
-  left: 0;
-  border-radius: 10px 0 0 10px;
-  padding: 18px 12px;
-`;
-
-const StyledHeader = styled(Header)`
-  border-radius: 0 10px 0 0;
-`;
-
-const StyledContent = styled(Content)`
-  border-radius: 0 0 10px 0;
-  background-color: #f0f2f5;
-`;
-
-const StyledItem = styled(Menu.Item)`
-  &&& {
-    height: 30px;
-    line-height: 30px;
-    border-radius: 8px;
-    padding-left: 8px !important;
-  }
-`;
+import {
+  StyledLayout,
+  StyledHeader,
+  StyledSider,
+  StyledContent,
+} from "./components/Layout";
+import { StyledItem } from "./components/Menu";
 
 const App = () => {
   return (
