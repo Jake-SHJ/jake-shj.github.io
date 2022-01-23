@@ -3,7 +3,7 @@ import { Layout, Menu, Avatar } from "antd";
 import Icon from "./components/Icon";
 import { StyledLayout, StyledSider, StyledContent } from "./components/Layout";
 import { StyledItem } from "./components/Menu";
-import { mapAvatarColor, mapMenus } from "./constants";
+import { mapAvatarColor, mapMenus } from "./constant/constants";
 const { Header } = Layout;
 
 const App = () => {
